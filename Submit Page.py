@@ -36,7 +36,7 @@ if submitted:
     #     recall it in the Prediction Page
     st.session_state['Citizen'] = [name,email,phone,comment]
     st.toast("Form submitted successfully!", icon="✅")
-    if name is not None:
+    if name is not "":
         st.session_state['Prediction'] = ["category", "sub_category", 91.569]
 
 # We can use this to send the data to the model and get the prediction
