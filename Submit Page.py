@@ -34,8 +34,6 @@ with st.form("client_form"):
 if submitted:
     # This line of code saves the data in session state {its like a temporary storage} and then we
     #     recall it in the Prediction Page
-    st.page_link("pages/Prediction Page.py", label="Go to Prediction Page")
-    st.session_state.go_to_page = "pages/Prediction Page.py"
     st.session_state['Citizen'] = [name,email,phone,comment]
     st.toast("Form submitted successfully!", icon="✅")
 
